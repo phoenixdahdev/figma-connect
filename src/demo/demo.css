@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: #fafafa;
+  color: var(--uic-color-primary);
+  font-family: var(--uic-font-body);
+}
+
+.demo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+.demo__header h1 { font-size: 32px; margin: 0 0 8px; }
+.demo__header p { margin: 0 0 40px; color: #666; max-width: 60ch; }
+
+.demo h2 {
+  font-size: 20px;
+  margin: 40px 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.demo__count {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  background: #ececec;
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.demo__note { margin: 0 0 20px; color: #666; font-size: 14px; }
+
+.demo code {
+  background: #ececec;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+}
+
+.demo__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.demo__cell,
+.demo__icon {
+  margin: 0;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.demo__cell figcaption,
+.demo__icon figcaption {
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.demo__icon figcaption small { color: #b4b4b4; font-size: 10px; }
+
+.demo__icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  .demo__grid { grid-template-columns: 1fr; }
+}

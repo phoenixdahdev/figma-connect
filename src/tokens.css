@@ -1,0 +1,27 @@
+/*
+ * Design tokens mirrored from the Figma library variables.
+ * Source: ui-component (NVKkAkrE6hyV35V75Z0ohi)
+ *
+ * Figma variable  ->  CSS custom property
+ *   primary       ->  --uic-color-primary
+ *   primary-40    ->  --uic-color-primary-40
+ *   primary-20    ->  --uic-color-primary-20
+ *   16/Regular    ->  --uic-font-body / --uic-font-size-body
+ *   16 / Italic   ->  same family, italic style
+ */
+:root {
+  --uic-color-primary: #131414;
+  --uic-color-primary-40: #a1a1a1;
+  --uic-color-primary-20: #d0d0d0;
+
+  --uic-font-body: 'Fira Sans', ui-sans-serif, system-ui, sans-serif;
+  --uic-font-size-body: 16px;
+  --uic-font-weight-body: 400;
+  --uic-line-height-body: normal;
+
+  --uic-icon-size-sm: 20px;
+  --uic-icon-size-md: 24px;
+
+  --uic-space-1: 8px;
+  --uic-space-gap: 10px;
+}
