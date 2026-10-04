@@ -20,8 +20,8 @@
     "**/*.css"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && tsc -b && vite build",
     "typecheck": "tsc --noEmit",
     "figma:publish": "figma connect publish",
     "figma:unpublish": "figma connect unpublish",
